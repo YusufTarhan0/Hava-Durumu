@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hava Durumu Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="app-header">
+            <h1><i class="fas fa-cloud-sun"></i> Hava Durumu Pro</h1>
+            <div class="current-date-time" id="currentDateTime">Yükleniyor...</div>
+            <div class="current-date" id="currentDate">Yükleniyor...</div>
+        </div>
+
+        <div class="search-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" placeholder="Şehir adını girin..." id="cityInput" />
+            <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="current-weather">
+            <div class="weather-icon">
+                <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon" id="weatherIcon" />
+            </div>
+            <div class="temp-info">
+                <h2 class="temperature" id="temperature">--<span>°C</span></h2>
+                <p class="description" id="description">--</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> <span class="city-name" id="cityName">--</span></p>
+            </div>
+        </div>
+
+        <div class="weather-details">
+            <div class="detail-card humidity">
+                <i class="fas fa-tint"></i>
+                <div class="detail-info">
+                    <span class="value" id="humidityValue">--%</span>
+                    <p class="label">Nem</p>
+                </div>
+            </div>
+            <div class="detail-card wind">
+                <i class="fas fa-wind"></i>
+                <div class="detail-info">
+                    <span class="value" id="windValue">-- km/s</span>
+                    <p class="label">Rüzgar Hızı</p>
+                </div>
+            </div>
+            <div class="detail-card pressure">
+                <i class="fas fa-temperature-low"></i>
+                <div class="detail-info">
+                    <span class="value" id="pressureValue">-- hPa</span>
+                    <p class="label">Basınç</p>
+                </div>
+            </div>
+            <div class="detail-card feels-like">
+                <i class="fas fa-thermometer-half"></i>
+                <div class="detail-info">
+                    <span class="value" id="feelsLikeValue">--°C</span>
+                    <p class="label">Hissedilen</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="forecast-section">
+            <h3 class="section-title">5 Günlük Tahmin</h3>
+            <div class="forecast-container" id="forecastContainer">
+                <!-- JavaScript ile doldurulacak -->
+            </div>
+        </div>
+
+        <div class="not-found" id="notFound">
+            <img src="https://cdn-icons-png.flaticon.com/512/7465/7465757.png" alt="Not Found" />
+            <h3>Konum Bulunamadı</h3>
+            <p>Lütfen yazımı kontrol edin veya başka bir konum deneyin.</p>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Hava durumu verileri yükleniyor...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
