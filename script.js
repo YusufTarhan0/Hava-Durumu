@@ -299,6 +299,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Hide loading and show content
     function hideLoading() {
         loading.classList.remove('active');
+        console.log("sadasddsa");
+        
     }
     
     // Show content with animation
