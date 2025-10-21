@@ -316,6 +316,8 @@ document.addEventListener('DOMContentLoaded', function() {
         weatherDetails.classList.remove('active');
         forecastSection.classList.remove('active');
         notFound.classList.add('active');
+        console.log("git değişikliği");
+        
     }
     
     // Animate weather change
